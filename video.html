@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube video</title>
+    <link rel="stylesheet" href="./home.css" />
+    <link rel="stylesheet" href="./video.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="navigations">
+            <div class="yt-button">
+                <a href="./index.html" style="border: none; background: #212121"><span class="material-icons-outlined" > menu </span></a>
+                <div>
+                    <div class="youtube-logo">
+                        <div class="red"></div>
+                        <div class="white"></div>
+                        <div class="red"></div>
+                    </div>
+                    <div class="youtube">YouTube</div>
+                </div>
+            </div>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search" />
+                <button id="search">
+                    <span class="material-icons-outlined"> search </span>
+                </button>
+                <div class="mic">
+                    <span class="material-icons-outlined"> mic </span>
+                </div>
+            </div>
+            <div class="profile">
+                <div class="create">
+                    <span class="material-icons-outlined"> video_call </span>
+                </div>
+                <div class="app">
+                    <span class="material-icons-outlined"> apps </span>
+                </div>
+                <div class="notification">
+                    <span class="material-icons-outlined"> notifications </span>
+                </div>
+                <div class="u-profile">
+                    <img src="https://i.ytimg.com/vi/ntLJmHOJ0ME/hqdefault.jpg" alt="user profile" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="left" id="left">
+            <div class="video-container" id="video-container">
+                <!-- <div class="video">
+                    <img src="https://i.ytimg.com/vi/ntLJmHOJ0ME/hqdefault.jpg" alt="" />
+                </div>
+                <div class="video-info">
+                    <div class="title">Lorem ipsum dolor sit amet.</div>
+                    <div class="info">
+                        <div class="info-text">
+                            <span class="views">3.7k</span>
+                            <span class="time">oct 17, 2022</span>
+                        </div>
+                        <div class="top-level">
+                            <div class="like">
+                                <button>
+                                    <span class="material-icons-outlined"> thumb_up </span>
+                                </button>
+                                <span>1.5k</span>
+                            </div>
+                            <div class="dislike">
+                                <button>
+                                    <span class="material-icons-outlined"> thumb_down </span>
+                                </button>
+                                <span>673</span>
+                            </div>
+                            <div class="share">
+                                <button>
+                                    <span class="material-icons-outlined"> share </span>
+                                </button>
+                                <span>share</span>
+                            </div>
+                            <div class="save">
+                                <button>
+                                    <span class="material-icons-outlined">
+                                        playlist_add_check
+                                    </span>
+                                </button>
+                                <span>save</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-desc">
+                    <div class="channel-info">
+                        <div class="left-info">
+                            <img src="https://i.ytimg.com/vi/ntLJmHOJ0ME/hqdefault.jpg" alt="" />
+                            <span class="channel-title">
+                                <div class="title">Lorem, ipsum dolor.</div>
+                                <div class="sub-title">1.2M subscriber</div>
+                            </span>
+                        </div>
+                        <div class="right-info">
+                            <button>Subscribes</button>
+                        </div>
+                    </div>
+                    <div class="desc-text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Molestias unde est ab temporibus perferendis aliquam ratione
+                        architecto perspiciatis eveniet totam ad, optio fuga doloribus
+                        illo labore rerum! Vero voluptatibus excepturi nobis id totam,
+                        iusto illum ea, magnam nostrum eum iure laboriosam similique
+                        cupiditate labore officia sunt sint eius quasi beatae.
+                    </div>
+                </div> -->
+            </div>
+            <div class="comment-container">
+                <div class="add-comment">
+                    <div class="short-by">
+                        <div class="count">286 Comments</div>
+                        <div class="shortBy">
+                            <span class="material-icons-outlined"> sort </span>
+                            <span>SORT BY</span>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <div class="c-profile">
+                            <img src="https://i.ytimg.com/vi/ntLJmHOJ0ME/hqdefault.jpg" alt="" />
+                        </div>
+                        <div class="comment-area">
+                            <input type="text" name="comment" placeholder="Add a public comment" />
+                        </div>
+                    </div>
+                </div>
+                <div class="comments" id="comments">
+
+                    <!-- <div class="user-comment">
+                        <div class="c-profile">
+                            <img src="https://i.ytimg.com/vi/ntLJmHOJ0ME/hqdefault.jpg" alt="" />
+                        </div>
+                        <div class="y-comment">
+                            <div class="c-header">
+                                <div class="user-name">Lorem, ipsum.</div>
+                                <div class="u-c-time">2 hours ago</div>
+                            </div>
+                            <div class="c-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Necessitatibus, velit?
+                            </div>
+                            <div class="c-toolbar">
+                                <div class="like">
+                                    <button>
+                                        <span class="material-icons-outlined"> thumb_up </span>
+                                    </button>
+                                    <span class="etxt">15</span>
+                                </div>
+                                <div class="dislike">
+                                    <button>
+                                        <span class="material-icons-outlined"> thumb_down </span>
+                                    </button>
+                                    <span class="etxt">1</span>
+                                </div>
+                                <div class="replay etxt">Replay</div>
+                            </div>
+                            <div class="c-replay">
+                                <span class="material-icons-outlined">
+                                    expand_more
+                                </span>
+                                <span>replies</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-comment">
+                        <div class="c-profile">
+                            <img src="https://i.ytimg.com/vi/ntLJmHOJ0ME/hqdefault.jpg" alt="" />
+                        </div>
+                        <div class="y-comment">
+                            <div class="c-header">
+                                <div class="user-name">Lorem, ipsum.</div>
+                                <div class="u-c-time">2 hours ago</div>
+                            </div>
+                            <div class="c-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Necessitatibus, velit?
+                            </div>
+                            <div class="c-toolbar">
+                                <div class="like">
+                                    <button>
+                                        <span class="material-icons-outlined"> thumb_up </span>
+                                    </button>
+                                    <span class="etxt">15</span>
+                                </div>
+                                <div class="dislike">
+                                    <button>
+                                        <span class="material-icons-outlined"> thumb_down </span>
+                                    </button>
+                                    <span class="etxt">1</span>
+                                </div>
+                                <div class="replay etxt">Replay</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-comment">
+                        <div class="c-profile">
+                            <img src="https://i.ytimg.com/vi/ntLJmHOJ0ME/hqdefault.jpg" alt="" />
+                        </div>
+                        <div class="y-comment">
+                            <div class="c-header">
+                                <div class="user-name">Lorem, ipsum.</div>
+                                <div class="u-c-time">2 hours ago</div>
+                            </div>
+                            <div class="c-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Necessitatibus, velit?
+                            </div>
+                            <div class="c-toolbar">
+                                <div class="like">
+                                    <button>
+                                        <span class="material-icons-outlined"> thumb_up </span>
+                                    </button>
+                                    <span class="etxt">15</span>
+                                </div>
+                                <div class="dislike">
+                                    <button>
+                                        <span class="material-icons-outlined"> thumb_down </span>
+                                    </button>
+                                    <span class="etxt">1</span>
+                                </div>
+                                <div class="replay etxt">Replay</div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="top-menu">
+                <div class="top-menu-item">
+                    <div class="item">all</div>
+                    <div class="item">Channel-name</div>
+                    <div class="item">Channel-name</div>
+                </div>
+            </div>
+            <div class="video">
+                <div class="video-item">
+                    <div class="v-thumbnail">
+                        <img src="https://i.ytimg.com/vi/ntLJmHOJ0ME/hqdefault.jpg" alt="" />
+                    </div>
+                    <div class="v-desc">
+                        <div class="v-title">video title</div>
+                        <div class="v-channel">channel name</div>
+                        <div class="v-v-desc">
+                            <span>1M views</span>
+                            <span>3 years ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <div class="v-thumbnail">
+                        <img src="https://i.ytimg.com/vi/ntLJmHOJ0ME/hqdefault.jpg" alt="" />
+                    </div>
+                    <div class="v-desc">
+                        <div class="v-title">video title</div>
+                        <div class="v-channel">channel name</div>
+                        <div class="v-v-desc">
+                            <span>1M views</span>
+                            <span>3 years ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <div class="v-thumbnail">
+                        <img src="https://i.ytimg.com/vi/ntLJmHOJ0ME/hqdefault.jpg" alt="" />
+                    </div>
+                    <div class="v-desc">
+                        <div class="v-title">video title</div>
+                        <div class="v-channel">channel name</div>
+                        <div class="v-v-desc">
+                            <span>1M views</span>
+                            <span>3 years ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <div class="v-thumbnail">
+                        <img src="https://i.ytimg.com/vi/ntLJmHOJ0ME/hqdefault.jpg" alt="" />
+                    </div>
+                    <div class="v-desc">
+                        <div class="v-title">video title</div>
+                        <div class="v-channel">channel name</div>
+                        <div class="v-v-desc">
+                            <span>1M views</span>
+                            <span>3 years ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <div class="v-thumbnail">
+                        <img src="https://i.ytimg.com/vi/ntLJmHOJ0ME/hqdefault.jpg" alt="" />
+                    </div>
+                    <div class="v-desc">
+                        <div class="v-title">video title</div>
+                        <div class="v-channel">channel name</div>
+                        <div class="v-v-desc">
+                            <span>1M views</span>
+                            <span>3 years ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./video.js"></script>
+    <!-- <script src="./home.js"></script> -->
+</body>
+
+</html>

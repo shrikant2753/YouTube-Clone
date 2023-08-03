@@ -1,0 +1,345 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+    font-family: "Roboto Flex", sans-serif;
+    background-color: #0f0f0f;
+    color: #f1f1f1;
+}
+
+/* header */
+.header{
+    position: sticky;
+    top: 0;
+}
+
+.navigations {
+    position: sticky;
+    display: flex;
+    z-index: 100;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #212121;
+}
+
+.yt-button {
+    background-color: #212121;
+    padding: 0px 50px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.yt-button div {
+    display: flex;
+    flex-direction: row;
+    /* background-color:  #212121; */
+}
+
+.youtube-logo {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.red {
+    width: 100%;
+    height: 8px;
+    background-color: #ff0000;
+}
+
+.white {
+    width: 100%;
+    height: 20px;
+    background-color: #ffffff;
+}
+
+.search-container {
+    /* border: 2px solid goldenrod; */
+    display: flex;
+    flex-direction: row;
+    width: 40vw;
+    padding: 10px;
+    justify-content: center;
+    /* margin: auto; */
+    background-color: #212121;
+}
+
+.search-container>input {
+    flex-grow: 1;
+    background-color: #121212;
+    border-top: 1px solid #303030;
+    border-left: 1px solid #303030;
+    border-bottom: 1px solid #303030;
+}
+
+.search-container>input:focus {
+    outline: none;
+}
+
+.search-container>input,
+.search-container>button {
+    padding: 10px 30px;
+}
+
+.search-container>button {
+    cursor: pointer;
+    border: 1px solid #303030;
+    border-radius: 4px;
+    background-color: #212121;
+    width: Fixed (64px);
+    height: Fixed (40px);
+    padding: 2px 7px 2px 7px;
+    border-radius: 0px 2px 2px 0px;
+    gap: 10px;
+}
+
+.search-container .mic{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+
+.search-container .mic span{
+    margin: 10px;
+}
+
+.profile {
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0px 50px;
+    align-items: center;
+    background-color: #212121;
+}
+
+.profile div,
+.profile span,
+.search-container>button div,
+.search-container>button span,
+.yt-button span,
+.yt-button .youtube-logo,
+.yt-button .youtube {
+    background-color: #212121;
+}
+
+.u-profile img {
+    height: 44px;
+    width: 44px;
+    border-color: #f1f1f1;
+    border-radius: 50%;
+}
+
+/* main-container */
+
+.main-container {
+    display: grid;
+    /* flex-direction: row; */
+    /* justify-content: start; */
+    grid-template-columns: 1fr 5fr;
+    gap: 20px;
+}
+
+
+.main-container .right {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Side bar */
+
+.sidebar{
+    /* border: 1px solid blue; */
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #212121
+}
+
+.sidebar .top, .sidebar .top-2, .sidebar .subscriptions, .sidebar .more-from, .sidebar .bottom, .sidebar .footer{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    border-bottom: 2px solid #303030;
+    padding: 10px 0px;
+    background-color: #212121
+}
+
+.top div,.top-2 div, .subscriptions div, .more-from div, .bottom div{
+    /* border: 1px solid green; */
+    padding: 5px 10px;
+    background-color: #212121
+}
+
+/* .top div:hover {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+} */
+
+.top div span, .top-2 div span, .subscriptions div span, .more-from div span, .bottom div span{
+    padding: 0px 10px;
+    align-self: center;
+    background-color: #212121
+}
+
+.subscriptions .subscribe-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscriptions .subscribe-item img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.footer{
+    margin: 0px 3px;
+}
+
+.footer ._1, .footer ._2{
+    background-color: #212121; 
+    padding: 10px; 
+    
+}
+
+.footer ._1 a, .footer ._2 a{
+    background-color: #212121;  
+    padding: 3px 5px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+/* top-item */
+.top-menu{
+    background-color: #212121;
+    margin:0px -20px;
+    padding: 10px 20px;
+    border-top: 1px solid  #303030;
+
+}
+
+.top-menu .item{
+    background-color: #212121;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.item span{
+    padding: 5px 15px;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: #212121;
+}
+
+.item span:hover{
+    background-color: #f1f1f1;
+    color: #0f0f0f;
+}
+
+.thumbnail {
+    display: grid;
+    /* margin: 0px 50px; */
+    grid-template-columns: repeat(4, 1fr);
+    /* padding: 10px 10px; */
+}
+
+.thumbnail .thumbnail-item {
+    /* border: 2px solid red; */
+    padding: 20px 10px;
+}
+
+/* .thumbnail-item > .thumbnail-video {
+     border: 2px solid orange; 
+} */
+
+.thumbnail-item>.thumbnail-video .img {
+    width: 100%;
+    height: 30vh;
+}
+
+.thumbnail-item>.thumbnail-video img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.thumbnail-item>.thumbnail-profile-desc {
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-direction: row;
+}
+
+.thumbnail-profile-desc img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    gap: 10px;
+    padding: 10px;
+}
+
+.thumbnail-profile-desc .description .title {
+    padding: 12px 0px 0px 0px;
+    font-size: 16px;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    font-family: "Roboto", "Arial", sans-serif;
+    /* line-height: 2.2rem; */
+}
+
+.channel-info {
+    color: #aaa !important;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.channel-info div {
+    padding-top: 5px;
+}
+
+.channel-info div span {
+    padding: 0px 15px 0px 0px;
+}
+
+@media screen and (min-width: 700px) {
+    .thumbnail {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .thumbnail {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .main-container {
+        grid-template-columns: 1fr; /* Change to a single column for smaller screens */
+    }
+    
+    .sidebar {
+        position: static; /* Remove sticky position on smaller screens */
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .thumbnail {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

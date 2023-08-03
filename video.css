@@ -1,0 +1,394 @@
+.header{
+    position: sticky;
+    top: 0;
+}
+
+
+/* Main cointainer */
+.main-container {
+    /* border: 2px solid blue; */
+    margin: 20px 200px;
+    /* height: 80vh; */
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 20px;
+}
+
+.left {
+    /* border: 2px solid red; */
+    padding: 10px;
+}
+
+.video-container {
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+}
+
+.video-container .video {
+    /* border: 2px solid orange; */
+}
+
+.video-container .video img {
+    width: 100%;
+    height: 50vh;
+}
+
+.video-container .video-info {
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+    justify-content: center;
+    border-bottom: 2px solid #303030;
+}
+
+.video-info .title {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #fff;
+    padding: 10px 0px
+}
+
+.video-info .info {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 0px 10px 0px;
+}
+
+.info-text .views,
+.info-text .time {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #aaa;
+    padding: 5px 5px;
+}
+
+.info .top-level {
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-level div {
+    padding: 0px 5px;
+    display: flex;
+    align-items: center;
+}
+
+.top-level button, .like button, .dislike button{
+    border: none;
+}
+
+.top-level span {
+    padding: 0px 7px;
+}
+
+.video-desc {
+    /* border: 2px solid yellow; */
+}
+
+.video-desc .channel-info {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 0px;
+}
+
+.channel-info .left-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.channel-info .left-info img, .c-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.left-info .channel-title {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+}
+
+.channel-title .title {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+}
+
+.channel-title .sub-title {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #aaa;
+}
+
+.right-info {
+    padding-right: 10px;
+}
+
+.right-info button {
+    background-color: #cc0000;
+    border: none;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+.desc-text {
+    padding: 5px 0px;
+    padding-left: 50px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+}
+
+
+/* comment container */
+
+.comment-container{
+    /* border: 1px solid blue; */
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+}
+.comment-container .add-comment{
+    /* border: 1px solid yellow; */
+    display: flex;
+    flex-direction: column;
+}
+
+.short-by{
+    /* border: 1px solid orangered; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 30px ;
+    padding: 10px 0px;
+}
+
+.shortBy{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: Roboto;
+font-size: 14px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.comment{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.comment-area {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    padding: 10px 0px;
+    
+}
+
+.comment-area input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #303030;
+}
+
+.comment-area>input:focus {
+    outline: none;
+}
+
+.comments{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.user-comment{
+    /* border:1px solid yellow; */
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px 0px;
+}
+
+.c-user{
+    display: flex;
+    flex-direction: row;
+    padding: 13px;
+    gap: 25px;
+}
+
+.user-comment .y-comment{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.y-comment .c-header{
+    display: flex;
+    flex-direction: row;
+}
+
+.c-header .user-name{
+    font-family: Roboto;
+font-size: 13px;
+font-weight: 700;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+padding-right: 10px;
+}
+
+.c-text{
+    font-family: Roboto;
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.c-header .u-c-time{
+    font-family: Roboto;
+font-size: 12px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+color:#aaa;
+}
+
+.y-comment .c-toolbar{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.c-toolbar > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.c-toolbar .etxt{
+    font-family: Roboto;
+font-size: 12px;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.c-replay{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.c-replay span{
+    padding: 5px 10px;
+    
+}
+
+.c-replies {
+    display: none;
+  }
+
+
+/* right section */
+.right {
+    padding: 10px;
+}
+
+.right .top-menu{
+    border: none;
+    margin: 0px 0px;
+    background-color: #0f0f0f;
+    
+}
+
+.top-menu-item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    gap: 10px;
+    
+    
+}
+
+.top-menu-item .item{
+    background-color: #303030;
+    padding: 5px 8px;
+    border: 1px solid #303030;
+    border-radius: 20px;
+}
+
+.video-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 10px 20px;
+    /* border: 1px solid green; */
+    padding: 10px;
+}
+
+.v-thumbnail img{
+    width: 200px;
+    height: 100px;
+}
+
+.v-desc{
+    display: flex;
+    flex-direction: column;
+}
+
+.v-v-desc{
+    display: flex;
+    flex-direction: row;
+}
+
+.v-v-desc span{
+    padding: 5px;
+}
