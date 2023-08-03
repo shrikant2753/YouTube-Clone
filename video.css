@@ -332,8 +332,8 @@ text-align: left;
 }
 
 .c-replies {
-    display: none;
-  }
+    display: block;
+}
 
 
 /* right section */
